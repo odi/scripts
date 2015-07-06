@@ -9,6 +9,7 @@ ln -s ~/etc/xmonad/infoBarrc ~/.xmonad/infoBarrc
 #   nix-env -f .nixpkgs/packs.nix -iA all
 mkdir ~/.nixpkgs
 ln -s ~/etc/nixos/user-packs.nix ~/.nixpkgs/packs.nix
+ln -s ~/etc/nixos/nixpkgs-conf.nix ~/.nixpkgs/config.nix
 
 # activate zsh
 ln -s ~/etc/zshrc ~/.zshrc
