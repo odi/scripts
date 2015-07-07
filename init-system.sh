@@ -13,6 +13,8 @@ ln -s ~/etc/nixos/nixpkgs-conf.nix ~/.nixpkgs/config.nix
 
 # activate zsh
 ln -s ~/etc/zshrc ~/.zshrc
+ln -s ~/etc/xresources ~/.Xresources
+xrdb  ~/.Xresources
 
 # activate emacs
 ln -s ~/etc/emacs/init.el ~/.emacs
