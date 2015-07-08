@@ -14,7 +14,8 @@ case $1 in
 	emacsclient --eval "(kill-emacs)"
 	;;
     "restart")
-	emacsd.sh stop %% emacsd.sh start
+	emacsclient --eval "(kill-emacs)"
+	emacs --daemon
 	;;
     "*")
 	echo "usage: $0 [start|stop|restart]"
