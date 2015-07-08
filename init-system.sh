@@ -38,3 +38,5 @@ ln -s /mnt/secure/mail ~/mail
 ln -s /mnt/secure/sec/notmuch-config ~/.notmuch-config
 ln -s /mnt/secure/sec/newsrc ~/.newsrc
 ln -s /mnt/secure/sec/newsrc.eld ~/.newsrc.eld
+ln -s /mnt/secure/sec/procmailrc ~/.procmailrc
+ln -s /mnt/secure/sec/fetchmailrc ~/.fetchmailrc
