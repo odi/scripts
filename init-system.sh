@@ -29,3 +29,12 @@ ln -s /mnt/secure/wiki ~/wiki
 # activate ssh and authorizations
 ln -s /mnt/secure/sec/ssh ~/.ssh
 ln -s /mnt/secure/authinfo ~/.authinfo
+
+# private configurations for emacs
+ln -s /mnt/secure/sec/secure.el ~/etc/emacs/secure.el
+
+# activate emails
+ln -s /mnt/secure/mail ~/mail
+ln -s /mnt/secure/sec/notmuch-config ~/.notmuch-config
+ln -s /mnt/secure/sec/newsrc ~/.newsrc
+ln -s /mnt/secure/sec/newsrc.eld ~/.newsrc.eld
