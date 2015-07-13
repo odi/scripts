@@ -33,6 +33,10 @@ ln -s /mnt/secure/authinfo ~/.authinfo
 # private configurations for emacs
 ln -s /mnt/secure/sec/secure.el ~/etc/emacs/secure.el
 
+# contacts
+ln -s /mnt/secure/sec/bbdb ~/.bbdb
+ln -s /mnt/secure/vcards ~/data/vcards
+
 # activate emails
 ln -s /mnt/secure/mail ~/mail
 ln -s /mnt/secure/sec/notmuch-config ~/.notmuch-config
