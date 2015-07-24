@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+# rfc: https://www.ietf.org/rfc/rfc2445.txt
+
 summary=""
 location=""
 description=""
@@ -22,7 +24,7 @@ while read line; do
 	starttime=`date --date "${t::-4} UTC" "+%Y-%m-%d %a %H:%M"`
     elif [[ "$line" =~ "DTEND" ]]; then
 	t=`echo $line | cut -d: -f2 | sed 's/T/ /'`
-	endtime=`date --date "${t::-4} UTC" "+%Y-%m-%d %a %H:%M"`	
+	endtime=`date --date "${t::-4} UTC" "+%Y-%m-%d %a %H:%M"`
     fi
 done < /dev/stdin
 
