@@ -1,5 +1,34 @@
 #!/bin/sh
 
+# CHANGELOG:
+# 2015-07-24: add media directory
+#             add workflow description
+
+# TODO:
+#  - customize workflow to the workflow descriptions
+
+# == workflow of getting configurations ==
+#
+# !!! all these files are from https://github.com/odi/dotfiles !!!
+#
+# 0. i have a working nixos installation (get configuration.nix from github)
+# 1. copy user-packs.nix & nixpkgs-conf.nix from github
+# 2. install all user-space packages with `nix-env -f ./nixpkgs/pack.nix -iA all
+# 3. activate xmonad
+# 4. activate zsh
+# 5. activate emacs
+
+# == workflow of getting data ==
+#
+# !!! first mount secure datastick !!!
+#
+# 1. link all username/password relevant files/directories
+#    ssh, emacs usernames/passwords
+# 2. link email data
+# 3. link personal wiki
+# 4. link all my contacts (bbdb and vcards)
+# 5. link my media directory (music, photos, ...)
+
 # activate xmonad
 ln -s ~/etc/xmonad/xmonad.hs ~/.xmonad/xmonad.hs
 ln -s ~/etc/xmonad/infoBarrc ~/.xmonad/infoBarrc
@@ -44,3 +73,6 @@ ln -s /mnt/secure/sec/newsrc ~/.newsrc
 ln -s /mnt/secure/sec/newsrc.eld ~/.newsrc.eld
 ln -s /mnt/secure/sec/procmailrc ~/.procmailrc
 ln -s /mnt/secure/sec/fetchmailrc ~/.fetchmailrc
+
+# link media directory
+ln -s /mnt/secure/media ~/media
